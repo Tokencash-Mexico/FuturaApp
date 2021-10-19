@@ -18,7 +18,8 @@
         android:id="@+id/txt_year_name"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:text="- - -"
+        android:layout_marginBottom="@dimen/margin"
+        android:text="© 2021 Futura100."
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />

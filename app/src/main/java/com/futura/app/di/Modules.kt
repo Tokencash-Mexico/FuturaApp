@@ -1,7 +1,9 @@
 package com.futura.app.di
 
 import androidx.lifecycle.SavedStateHandle
+import com.futura.app.ui.mvi.changes.AuthChange
 import com.futura.app.ui.mvi.changes.SplashChange
+import com.futura.app.ui.viewmodel.AuthViewModel
 import com.futura.app.ui.viewmodel.SplashViewModel
 import kotlinx.coroutines.ExperimentalCoroutinesApi
 import kotlinx.coroutines.FlowPreview
@@ -29,6 +31,13 @@ object Modules {
             SplashViewModel(
                 androidContext(),
                 SplashChange(SplashChange.State.Init)
+            )
+        }
+
+        viewModel { (handle: SavedStateHandle) ->
+            AuthViewModel(
+                androidContext(),
+                AuthChange(AuthChange.State.Init)
             )
         }
     }

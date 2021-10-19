@@ -15,8 +15,8 @@ import com.karumi.dexter.listener.multi.MultiplePermissionsListener
 class MainActivity : AppCompatActivity(), MultiplePermissionsListener {
 
     private val permissions = listOf(
-        android.Manifest.permission.ACCESS_FINE_LOCATION,
-        android.Manifest.permission.CAMERA
+        android.Manifest.permission.ACCESS_FINE_LOCATION/*,
+        android.Manifest.permission.CAMERA*/
     )
 
     override fun onCreate(savedInstanceState: Bundle?) {

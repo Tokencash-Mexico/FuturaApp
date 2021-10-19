@@ -3,4 +3,16 @@
     
     <!-- DIALOGS -->
     <string name="necessary_permits">Los permisos son necesarios para utilizar la aplicación.</string>
+
+    <!-- AUTH -->
+    <string name="welcome">Bienvenido</string>
+    <string name="body_welcome">Si en el futuro de tus gasolineras ves clientes disfrutando de nuevas experiencias, con nosotros tienes el producto y la tecnología.</string>
+    <string name="bol_input">BOL:</string>
+    <string name="bol_example">Example BOL</string>
+    <string name="seals">Sellos</string>
+    <string name="example">Example</string>
+    <string name="login">Login</string>
+    <string name="futura_100">Futura100</string>
+    <string name="copy_rigth">©</string>
+
 </resources>

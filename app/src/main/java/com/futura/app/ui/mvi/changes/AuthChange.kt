@@ -5,13 +5,13 @@ import com.futura.app.ui.mvi.bases.BaseEffect
 import com.futura.app.ui.mvi.bases.BaseState
 import com.futura.app.ui.mvi.bases.BaseType
 
-data class SplashChange(override val type: BaseType, val errorMessage: String? = null) : BaseChange {
+data class AuthChange(override val type: BaseType, val errorMessage: String? = null) : BaseChange {
 
-    enum class State : BaseType, BaseState {
+    enum class State: BaseType, BaseState {
         Init, Inactive, Active, Idle, Loading
     }
 
     enum class Effect: BaseType, BaseEffect {
-        Failure, NavigateSettings
+        Failure, NavigationHome
     }
 }

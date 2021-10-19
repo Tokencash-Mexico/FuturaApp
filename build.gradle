@@ -21,7 +21,7 @@ buildscript {
         kotlin_preferences_version = "2.11.0"
         encrypted_preferences_version = "1.0.0-rc02"
         room_version = "2.2.5"
-        safe_args_plugin_version = "2.2.1"
+        safe_args_plugin_version = "2.3.5"
     }
 
     repositories {

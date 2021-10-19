@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- TEXT -->
+    <dimen name="capition_text_size">12sp</dimen>
+    <dimen name="body_text_size">14sp</dimen>
+    <dimen name="subtitle_text_size">16sp</dimen>
+    <dimen name="title_text_size">20sp</dimen>
+    <dimen name="headline_text_size">24sp</dimen>
+    <dimen name="big_title_text_size">30sp</dimen>
+    <dimen name="title_pending_text_size">36sp</dimen>
+
+    <!-- MARGIN -->
+    <dimen name="margin_big">35sp</dimen>
+    <dimen name="margin">25sp</dimen>
+    <dimen name="margin_min">15sp</dimen>
+
+    <!-- RADIUS -->
+    <dimen name="radius_basic">10sp</dimen>
+
+</resources>

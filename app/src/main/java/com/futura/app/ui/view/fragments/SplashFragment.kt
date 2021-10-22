@@ -57,6 +57,6 @@ class SplashFragment : BaseView<SplashAction, SplashChange, SplashViewModel>() {
     }
 
     private fun renderNavigateHome() {
-        findNavController().navigate(R.id.action_splashFragment_to_homeFramgent)
+        findNavController().navigate(R.id.action_splashFragment_to_authFramgent)
     }
 }

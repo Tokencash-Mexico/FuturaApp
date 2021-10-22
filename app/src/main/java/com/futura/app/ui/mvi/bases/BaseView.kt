@@ -10,6 +10,13 @@ import kotlinx.coroutines.InternalCoroutinesApi
 import kotlinx.coroutines.flow.collect
 import kotlinx.coroutines.launch
 
+/**
+ * Base [Fragment] to use in all the App
+ *
+ * Follows a MVI pattern in conjunction with the [BaseViewModel]
+ *
+ * Is needed to define first the actions and changes that can handle the view
+ */
 @ExperimentalCoroutinesApi
 @FlowPreview
 @InternalCoroutinesApi

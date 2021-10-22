@@ -5,6 +5,7 @@
 
     <!-- COLORS -->
     <color name="text_black">#000000</color>
+    <color name="text_white">#FFFFFF</color>
     <color name="gray">#D2D2D2</color>
     <color name="blue_basic">#193AE5</color>
 

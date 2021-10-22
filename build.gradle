@@ -3,11 +3,17 @@ apply plugin: 'koin'
 
 buildscript {
     ext {
-        kotlin_version = "1.5.20"
         dokka_version = '0.9.17'
+        kotlin_version = "1.5.20"
         koin_version = '3.1.2'
 
         //APP
+        min_sdk = 24
+        target_sdk = 30
+        version_code = 9
+        version_name = '1.0.0'
+        build_tools_version = "30.0.3"
+        jvm_target = '1.8'
 
         //DEPENDENCIES
         nav_version = '2.3.5'
@@ -22,6 +28,15 @@ buildscript {
         encrypted_preferences_version = "1.0.0-rc02"
         room_version = "2.2.5"
         safe_args_plugin_version = "2.3.5"
+        legacy_version = "1.0.0"
+        gson_version = "2.8.6"
+        app_compat_version = "1.1.0"
+        kotlin_core_version = '1.3.0'
+        espresso_version = "3.2.0"
+        espresso_core_version = "3.2.0"
+        google_version = "18.0.0"
+        maps_plat_secrets_version = "2.0.0"
+        maps_version = "17.0.1"
     }
 
     repositories {
@@ -38,8 +53,10 @@ buildscript {
         classpath("androidx.navigation:navigation-safe-args-gradle-plugin:$safe_args_plugin_version")
         classpath "org.jetbrains.dokka:dokka-android-gradle-plugin:$dokka_version"
         classpath "org.jetbrains.dokka:dokka-gradle-plugin:$dokka_version"
+
         classpath("io.insert-koin:koin-gradle-plugin:$koin_version")
         classpath("org.jetbrains.kotlin:kotlin-allopen:$kotlin_version")
+        classpath("com.google.android.libraries.mapsplatform.secrets-gradle-plugin:secrets-gradle-plugin:$maps_plat_secrets_version")
     }
 }
 
@@ -47,6 +64,7 @@ allprojects {
     repositories {
         google()
         mavenCentral()
+        mavenLocal()
         maven { url 'https://jitpack.io' }
     }
 }
